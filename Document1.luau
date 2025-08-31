@@ -415,7 +415,7 @@ createTab("Universal", function()
 	end)
 	createButton("infinite jump", function()
 	local InfiniteJumpEnabled = True
-game:GetService("UserInputService").JumpRequest:connect(function()
+    game:GetService("UserInputService").JumpRequest:connect(function()
 	    if InfiniteJumpEnabled then
 		    game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
 	    end
